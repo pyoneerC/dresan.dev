@@ -6,10 +6,13 @@ import { DRESAN_EMAIL } from "~/constants"
 import { copyToClipboard } from "~/utils"
 import { useTimeout } from "~/hooks/use-timeout"
 import styles from "./CopyEmailButton.module.css"
+import { useTranslations } from "next-intl"
 
 const RESET_FEEDBACK_TIME = 5000
 
 export const CopyEmailButton = () => {
+	const t = useTranslations("CopyEmailButton")
+
 	const [displayFeedback, setDisplayFeedback] = useState(false)
 
 	const hideFeedback = () => setDisplayFeedback(false)
@@ -24,12 +27,12 @@ export const CopyEmailButton = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={clsx(styles.toast, { [styles.enterToast]: displayFeedback })}>
-				¡Estaré esperando tu mensaje!
+				{t("toast")}
 			</div>
 			<button className={styles.button} type="button" onClick={handleOnClick}>
 				{DRESAN_EMAIL}
 			</button>
-			<div className={styles.hintMessage}>Click para copiar</div>
+			<div className={styles.hintMessage}>{t("hint")}</div>
 		</div>
 	)
 }

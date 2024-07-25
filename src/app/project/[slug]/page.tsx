@@ -4,6 +4,7 @@ import { projects } from "~/data/projects"
 import { getPrevAndNextProjectSlug, getProjectBySlug } from "~/helpers/get-projects"
 import { Link } from "~/components/Ui/Link"
 import styles from "./page.module.css"
+import { useTranslations } from "next-intl"
 
 interface Props {
 	params: { slug: string }
@@ -27,6 +28,8 @@ export function generateStaticParams() {
 }
 
 export default function Project({ params }: Props) {
+	const t = useTranslations("Project")
+
 	const project = getProjectBySlug(params.slug)!
 
 	const { index, name, description, mobileImages, desktopImages, links, tags } = project
@@ -36,7 +39,7 @@ export default function Project({ params }: Props) {
 	return (
 		<>
 			<main className={styles.wrapper}>
-				<Link href="/">← Volver al inicio</Link>
+				<Link href="/">{t("goHome")}</Link>
 				<div className={styles.topWrapper}>
 					<section className={styles.detailsSection}>
 						<h1 className={styles.title}>{name}</h1>
@@ -93,14 +96,14 @@ export default function Project({ params }: Props) {
 					className={styles.navLink}
 					href={`/project/${prevProjectSlug}`}
 				>
-					Anterior
+					{t("prev")}
 				</NextLink>
 				<NextLink
 					data-text="Siguiente"
 					className={styles.navLink}
 					href={`/project/${nextProjectSlug}`}
 				>
-					Siguiente
+					{t("next")}
 				</NextLink>
 			</nav>
 		</>

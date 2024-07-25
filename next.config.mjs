@@ -1,5 +1,6 @@
 import createMDX from '@next/mdx'
 import rehypeShiki from '@shikijs/rehype'
+import createNextIntlPlugin from 'next-intl/plugin';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -18,4 +19,8 @@ const withMDX = createMDX({
   },
 })
 
-export default withMDX(nextConfig)
+const withNextIntl = createNextIntlPlugin(
+  './src/i18n.ts'
+);
+
+export default withMDX(withNextIntl(nextConfig))

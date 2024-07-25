@@ -10,8 +10,11 @@ import { Button } from "~/components/Ui/Button"
 import { LanguageSwitcher } from "~/components/LanguageSwitcher"
 import { ContactDialog } from "~/components/ContactDialog"
 import styles from "./MenuMobile.module.css"
+import { useTranslations } from "next-intl"
 
 export const MenuMobile = () => {
+	const t = useTranslations("MenuMobile")
+
 	const [open, setOpen] = useState(false)
 
 	useOnPathnameChange(() => {
@@ -28,7 +31,7 @@ export const MenuMobile = () => {
 		<>
 			<button
 				className={clsx(styles.button, { [styles.open]: open })}
-				aria-label={`${open ? "Cerrar" : "Abrir"} menú`}
+				aria-label={open ? t("close") : t("open")}
 				type="button"
 				onClick={handleOnClick}
 			>
@@ -51,12 +54,12 @@ export const MenuMobile = () => {
 					<ContactDialog
 						trigger={
 							<Button className={styles.contactButton} size="medium" type="button">
-								Contactar
+								{t("contact")}
 							</Button>
 						}
 					/>
 					<div className={styles.themeWrapper}>
-						<span>Idioma </span> <LanguageSwitcher />
+						<span>{t("language")} </span> <LanguageSwitcher />
 					</div>
 				</div>
 			</div>

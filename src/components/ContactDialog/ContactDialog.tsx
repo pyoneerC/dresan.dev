@@ -1,16 +1,19 @@
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "~/components/Ui/Dialog"
 import { ContactForm } from "~/components/ContactForm"
+import { useTranslations } from "next-intl"
 
 interface Props {
 	trigger: React.ReactNode
 }
 
 export const ContactDialog: React.FC<Props> = ({ trigger }) => {
+	const t = useTranslations("ContactDialog")
+
 	return (
 		<Dialog>
 			<DialogTrigger asChild>{trigger}</DialogTrigger>
 			<DialogContent>
-				<DialogTitle>Contactar</DialogTitle>
+				<DialogTitle>{t("title")}</DialogTitle>
 				<ContactForm />
 			</DialogContent>
 		</Dialog>

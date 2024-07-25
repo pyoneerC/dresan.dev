@@ -5,19 +5,21 @@ import { ContactDialog } from "~/components/ContactDialog";
 import { CopyEmailSmallButton } from "~/components/CopyEmailSmallButton";
 import styles from "./HeroSection.module.css";
 import ScrollToTopButton from "~/components/ScrollToTopButton/ScrollToTopButton";
+import { useTranslations } from "next-intl";
 
 export const HeroSection = () => {
+  const t = useTranslations("HeroSection");
   return (
     <section aria-labelledby="hero-title" className={styles.section}>
       <h1 id="hero-title" className={`text-gradient ${styles.title}`}>
-        Maximo Comperatore, Desarrollador Backend y de Videojuegos
+        {t("title")}
       </h1>
       <div className={styles.intro}>
         <p className={styles.introSubtitle}>
-          Un desarrollador pragmático con un fuerte enfoque en la calidad en cada etapa del desarrollo.
+          {t("subtitle")}
         </p>
         <p className={styles.introSubtitle}>
-          Me encuentro en Mendoza, Argentina.
+          {t("location")}
           <img
             className={styles.flag}
             src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
@@ -36,7 +38,7 @@ export const HeroSection = () => {
             rel="noopener noreferrer"
           >
             <span className={styles.availableCircle}></span>
-            Disponible para nuevos proyectos
+            {t("availability")}
           </NextLink>
         </Button>
       </div>
@@ -44,7 +46,7 @@ export const HeroSection = () => {
         <ContactDialog
           trigger={
             <Button className={styles.actionBtn} type="button">
-              Contáctame
+              {t("contact")}
             </Button>
           }
         />
@@ -54,7 +56,7 @@ export const HeroSection = () => {
             target="_blank"
             prefetch={false}
           >
-            Descargar Curriculum <ArrowDown />
+            {t("download")} <ArrowDown />
           </NextLink>
         </Button>
         <CopyEmailSmallButton className={styles.copyEmailButton} />

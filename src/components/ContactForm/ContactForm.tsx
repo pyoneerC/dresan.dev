@@ -9,10 +9,13 @@ import { Input } from "~/components/Ui/Input"
 import { Textarea } from "~/components/Ui/TextArea"
 import { MessageCard } from "~/components/MessageCard"
 import styles from "./ContactForm.module.css"
+import { useTranslations } from "next-intl"
 
 const RESET_MESSAGE_TIME = 6000
 
 export const ContactForm = () => {
+	const t = useTranslations("ContactForm")
+
 	const formRef = useRef<HTMLFormElement>(null)
 	const [isPending, startTransition] = useTransition()
 	const [responseMessage, setResponseMessage] = useState<null | string>(null)
@@ -32,7 +35,7 @@ export const ContactForm = () => {
 				return
 			}
 
-			setResponseMessage("Gracias por tu mensaje ❤️, responderé lo antes posible.")
+			setResponseMessage(t("successMessage"))
 			setHasError(false)
 			formRef.current?.reset()
 		})
@@ -41,11 +44,11 @@ export const ContactForm = () => {
 	return (
 		<form ref={formRef} className={styles.form} action={formAction}>
 			<Label>
-				<span className={styles.labelWrapper}>Nombre</span>
+				<span className={styles.labelWrapper}>{t("labels.name")}</span>
 				<Input placeholder="Alfredo Linux" name="name" autoComplete="name" required />
 			</Label>
 			<Label>
-				<span className={styles.labelWrapper}>Correo</span>
+				<span className={styles.labelWrapper}>{t("labels.email")}</span>
 				<Input
 					placeholder="alfredlinux@gmail.com"
 					type="email"
@@ -55,11 +58,11 @@ export const ContactForm = () => {
 				/>
 			</Label>
 			<Label>
-				<span className={styles.labelWrapper}>Mensaje</span>
-				<Textarea placeholder="Hola Max, [Insertar Mensaje]" name="message" required />
+				<span className={styles.labelWrapper}>{t("labels.message")}</span>
+				<Textarea placeholder={t("placeholder.message")} name="message" required />
 			</Label>
 			<Button disabled={isPending} size="medium">
-				Enviar
+				{t("send")}
 			</Button>
 			{responseMessage && (
 				<MessageCard variant={hasError ? "error" : "success"}>{responseMessage}</MessageCard>

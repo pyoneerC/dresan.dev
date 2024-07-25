@@ -1,0 +1,225 @@
+{
+    "LanguageSwitcher": {
+        "switchLanguage": "Switch to Spanish"
+    },
+    "HeroSection": {
+        "title": "Maximo Comperatore, Backend Developer and Game Developer",
+        "subtitle": "A pragmatic developer with a strong focus on quality at every stage of development.",
+        "location": "I'm located in Mendoza, Argentina.",
+        "availability": "Available for new projects.",
+        "contact": "Contact me",
+        "download": "Download Resume"
+    },
+    "ProjectsSection": {
+        "title": "Latest Projects"
+    },
+    "AboutSection": {
+        "title": "About me",
+        "paragraphs": [
+            "Meet Máximo Comperatore, a backend developer aspirant with .NET and game development specialization.",
+            "Currently, I am studying Game Development at Universidad de Mendoza, aiming to build a solid professional career in the tech sector.",
+            "I stand out for being detail-oriented, organized, punctual, and pleasant. Moreover, I am a perseverant worker and a collaborative team member, always willing to learn and enhance my skills.",
+            "I am looking to get involved in innovative and challenging projects that allow me to expand my competencies and, at the same time, empower those who work around me."
+        ]
+    },
+    "SkillsSection": {
+        "title": "Technologies"
+    },
+    "ContactSection": {
+        "title": [
+            "Want to collaborate",
+            "on a project?"
+        ]
+    },
+    "Blog": {
+        "title": "Blog",
+        "goHome": "← Go back to the home page"
+    },
+    "PostsLayout": {
+        "greetings": "Thanks for your time. See you in the next post!",
+        "goHome": "← Go back to the Blog"
+    },
+    "Project": {
+        "goHome": "← Go back home",
+        "prev": "Previous",
+        "next": "Next"
+    },
+    "404": {
+        "title": "404",
+        "description": "Page not found",
+        "goHome": "Go back home"
+    },
+    "ArticleHeader": {
+        "goHome": "← Back to Blog"
+    },
+    "ContactDialog": {
+        "title": "Contact"
+    },
+    "ContactForm": {
+        "successMessage": "Thanks for your message ❤️, I will respond as soon as possible.",
+        "labels": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message"
+        },
+        "placeholder": {
+            "name": "Alfredo Linux",
+            "message": "Hello Max, [Insert Message]"
+        },
+        "send": "Send"
+    },
+    "CopyEmailButton": {
+        "hint": "Click to copy",
+        "toast": "I'll be waiting for your message!"
+    },
+    "Header": {
+        "contact": "Contact"
+    },
+    "MenuMobile": {
+        "close": "Close menu",
+        "open": "Open menu",
+        "language": "Language",
+        "contact": "Contact"
+    },
+    "FAQ": {
+        "title": "FAQ - Frequently Asked Questions",
+        "goHomeLink": "← Go back to the main page",
+        "goBlogLink": "← Go to Blog",
+        "action": "Action",
+        "reflection": "Reflection",
+        "result": "Result",
+        "situation": "Situation",
+        "section1": {
+            "title": "Programming Journey",
+            "paragraph1": "My interest in programming began in 2022, driven by my passion for video games. I started with basic courses like Pseint and Egg bootcamps, and solidified my enthusiasm by collaborating on the 'War Report for Clash of Clans' app. This experience reinforced my decision to pursue a career in programming.",
+            "paragraph2": "I am currently in the second semester of Game Development, focusing on computer graphics and backend. I seek to collaborate with like-minded individuals, inspire others, and positively contribute to the world through technology. At 19, I continue to learn and seek collaboration opportunities."
+        },
+        "section2": {
+            "title": "Motivations for Studying Programming",
+            "paragraph": "I have always been fascinated by turning abstract ideas into practical solutions through code. My interest in games like Rocket League and Subnautica has been a major motivation. I enjoy problem-solving, learning from mistakes, and collaborating on projects. Programming combines technique and creativity, and seeing my work become functional software is extremely rewarding. The possibility of contributing to innovative and ever-evolving projects deeply inspires me."
+        },
+        "section3": {
+            "title": "Frontend or Backend?",
+            "paragraph": "I specialize in backend, although I can also work on frontend if needed. I prefer server-side development, related to game programming and database management. I enjoy solving technical problems behind the scenes and optimizing performance. Backend allows me to work with technologies like databases, APIs, and cloud services, expanding my skills. I value collaborating with other developers to ensure the quality of the final product."
+        },
+        "section4": {
+            "title": "Where Do You See Yourself in 5 Years?",
+            "paragraph": "In five years, I see myself as an expert in backend and game development, leading teams and sharing my knowledge as a tutor. I aspire to contribute to cutting-edge technologies, optimize processes, and develop scalable and secure solutions. I would like to delve into artificial intelligence and machine learning, integrating these technologies into game development and backend applications. I also want to be a mentor, engaging in programming communities and offering workshops and talks. Personally, I seek to balance my professional and personal life, enjoying my hobbies and contributing to innovative projects."
+        },
+        "section5": {
+            "title": "What Are You Looking for in a New Job?",
+            "paragraph": "I am looking for a collaborative environment with capable and pleasant people to turn ideas into reality and learn from mistakes. I am interested in working on projects that utilize my skills and learning from experienced mentors. I value a place that offers personal and professional growth opportunities, with effective communication and mutual support. I am excited to take on new challenges and responsibilities in a continuous learning environment."
+        },
+        "section6": {
+            "title": "Challenges and Solutions",
+            "list": [
+                {
+                    "title": "Game Model Issues",
+                    "situation": "In 'Pixelated Drift', buildings weighed a gigabyte each, preventing packaging.",
+                    "action": "I tried reducing polygons in Blender without success.",
+                    "result": "I uploaded the game to itch.io and the editor to Google Drive, allowing users to play.",
+                    "reflection": "Persisting and maintaining an open mindset is key to finding alternative solutions."
+                },
+                {
+                    "title": "Serverless Function Expiration",
+                    "situation": "The function in the MercadoLibre Price Chart project expired due to long response times.",
+                    "action": "I implemented Fly.io to handle asynchronous tasks and rewrote the code in Flask and FastAPI.",
+                    "result": "Searches completed smoothly and price charts displayed correctly.",
+                    "reflection": "Learning new technologies and seeking help from the community are crucial to problem-solving."
+                },
+                {
+                    "title": "Creating a Professional Portfolio",
+                    "situation": "I wanted to create an impressive portfolio with few resources.",
+                    "action": "Forked DRESAN's portfolio, optimizing and adapting it to my needs.",
+                    "result": "I created a standout portfolio, learning and adapting what others had done.",
+                    "reflection": "Observing and adapting others' work is an excellent way to improve."
+                }
+            ]
+        },
+        "section7": {
+            "title": "Recommended Educational Resources",
+            "list": [
+                "Computer Graphics",
+                "Roadmap.sh",
+                "Discord Communities",
+                "Reddit",
+                "Official Documentation",
+                "Fullstack Open",
+                "Learn CPP",
+                "Big O Cheat Sheet",
+                "Microsoft Learn",
+                "draw.io",
+                "Khan Academy",
+                "ChatGPT",
+                "Wikipedia and Books",
+                "GitHub",
+                "Perplexity",
+                "Trello"
+            ]
+        },
+        "section8": {
+            "title": "Staying Updated",
+            "paragraph": "To stay informed about the latest trends and technologies, I follow tech blogs, tutorials, and communities on Discord and Reddit. I follow channels like Midudev and Fireship, and the official Unity and Unreal channels for graphics advancements. I also follow relevant people on LinkedIn and attend conferences like GDC and Microsoft Build. I review repositories on GitHub and consult Product Hunt for tech news."
+        },
+        "section9": {
+            "title": "What Do You Like to Do in Your Free Time?",
+            "paragraph": "In my free time, I enjoy developing projects and collaborating with the development community. I like running, watching prank videos on YouTube, eating, and watching animated movies. I listen to a variety of music, including EDM, salsa, and urban rap. Riding motorcycles and exploring abandoned places for mountain barbecues are hobbies I value. Discovering new music is one of my favorite pastimes."
+        },
+        "section10": {
+            "title": "Mentors and Influences",
+            "paragraph": "Colin Schemale, Franco Yudica, and Enzo Notario have been instrumental in my career, providing advice and guidance. I aspire to be a mentor to others, sharing my experience and helping cultivate future innovators."
+        },
+        "section11": {
+            "title": "Key Experiences",
+            "list": [
+                {
+                    "title": "Problem-Solving with Simple Solutions",
+                    "situation": "Needed icons for my portfolio and footer links.",
+                    "action": "Used the Awesome Fonts library instead of downloading SVGs for each logo.",
+                    "result": "Time-saving and efficient solution."
+                },
+                {
+                    "title": "Receiving Critical Feedback",
+                    "situation": "Feedback on portfolio presentation.",
+                    "action": "Implemented suggested changes and optimized design.",
+                    "result": "Improvement in presentation."
+                },
+                {
+                    "title": "Supporting Peers",
+                    "situation": "Peer struggling with Blueprints during a game jam.",
+                    "action": "Taught and helped resolve issues.",
+                    "result": "Improved understanding and project performance."
+                }
+            ]
+        },
+        "section12": {
+            "title": "Innovation in Projects",
+            "paragraph": "MercadoLibre Price Charts project, answering the question 'How much is this online?'.",
+            "result": "Effective solution for online price visualization in Argentina."
+        },
+        "section13": {
+            "title": "Group Decision",
+            "paragraph": "We decided to use Unity instead of Unreal Engine in a team project.",
+            "action": "Accepted the decision and learned more about Unity.",
+            "result": "Enthusiastically contributed to the project.",
+            "reflection": "Adapting to group decisions and learning new tools is beneficial for the project and personal development."
+        },
+        "section14": {
+            "title": "Notable Achievements",
+            "paragraph": "WIP"
+        },
+        "section15": {
+            "title": "Favorite Songs",
+            "list": [
+                "Runaway (U & I) - Galantis",
+                "Good 4 Me - Vindata",
+                "Cutting Shapes - Don Diablo",
+                "Play - Tokyo Machine",
+                "The Nights - Avicii",
+                "She Wants Me Dead - CAZZETTE",
+                "Sillhouette (Feed Me Remix) - Owl City",
+                "Overkill - RIOT"
+            ]
+        }
+    }
+}

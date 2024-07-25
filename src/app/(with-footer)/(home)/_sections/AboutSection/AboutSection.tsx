@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './AboutSection.module.css';
+import { useTranslations } from 'next-intl';
 
 export const AboutSection = () => {
+  const t = useTranslations('AboutSection');
   return (
     <section className="section-wrapper">
-      <h2 className={styles.title}>Sobre mí</h2>
+      <h2 className={styles.title}>{t('title')}</h2>
       <div className={styles.aboutMeContainer}>
         <div className={styles.photoWrapper}>
           <img
@@ -18,16 +20,16 @@ export const AboutSection = () => {
         </div>
         <div className={styles.textWrapper}>
           <p className={styles.paragraph}>
-            Conoce a Máximo Comperatore, un aspirante a desarrollador especializado en Backend con .NET y desarrollo de videojuegos.
+            {t('paragraphs.0')}
           </p>
           <p className={styles.paragraph}>
-            Actualmente, estoy cursando estudios en Desarrollo de Videojuegos en la Universidad de Mendoza, con el objetivo de forjar una carrera profesional sólida en el sector tecnológico.
+            {t('paragraphs.1')}
           </p>
           <p className={styles.paragraph}>
-            Destaco por ser una persona atenta al detalle, organizada, puntual y agradable. Además, soy un trabajador perseverante y miembro colaborativo de equipo, siempre dispuesto a aprender y mejorar mis habilidades.
+            {t('paragraphs.2')}
           </p>
           <p className={styles.paragraph}>
-            Busco involucrarme en proyectos innovadores y desafiantes que me permitan expandir mis competencias y, al mismo tiempo, potenciar a quienes trabajan a mi alrededor.
+            {t('paragraphs.3')}
           </p>
         </div>
       </div>
